@@ -201,7 +201,7 @@ class FruitContainer extends Component {
     this.setState((prevState, props) => {
       // remove fruits that don't contain the filter value
       const filteredFruitList = props.fruits.filter(fruit =>
-        fruit.toLocaleLowerCase().includes(filterValue.toLocaleLowerCase()))
+        fruit.toLowerCase().includes(filterValue.toLowerCase()))
       // return new state with the filtered fruit list and the new value of the filter
       return {
         fruitsToDisplay: filteredFruitList,
@@ -271,10 +271,10 @@ Notice that in the constructor the app initializes the value of `unmatchedFruits
 ```js
 // remove fruits that don't contain the filter value
 const filteredFruitList = props.fruits.filter(fruit =>
-  fruit.toLocaleLowerCase().includes(filterValue.toLocaleLowerCase()))
+  fruit.toLowerCase().includes(filterValue.toLowerCase()))
 // perform the opposite logic to create a list of fruits that don't match.
 const unmatchedFruits = props.fruits.filter(fruit =>
- !fruit.toLocaleLowerCase().includes(filterValue.toLocaleLowerCase()))
+ !fruit.toLowerCase().includes(filterValue.toLowerCase()))
 // return new state with the filtered fruit list and the new value of the filter
 return {
  fruitsToDisplay: filteredFruitList,
