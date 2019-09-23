@@ -69,6 +69,61 @@ const FruitFilter = props => (
 
 `FruitFilter` renders a single input. Its value and onChange callbacks will both be set by the container component.
 
+<details>
+  <summary>Fruit List</summary>
+  ```jsx
+    const fruitList = [
+    'Acai', 
+    'Aceola',
+    'Apple',
+    'Apricots',
+    'Avocado',
+    'Banana',
+    'Blackberry',
+    'Blueberries',
+    'Camu Camu berry',
+    'Cherries',
+    'Coconut',
+    'Cranberry',
+    'Cucumber',
+    'Currents',
+    'Dates',
+    'Durian',
+    'Fig',
+    'Goji berries',
+    'Gooseberry',
+    'Grapefruit',
+    'Grapes',
+    'Jackfruit',
+    'Kiwi',
+    'Kumquat',
+    'Lemon',
+    'Lime',
+    'Lucuma',
+    'Lychee',
+    'Mango',
+    'Mangosteen',
+    'Melon',
+    'Mulberry',
+    'Nectarine',
+    'Orange',
+    'Papaya',
+    'Passion Fruit',
+    'Peach',
+    'Pear',
+    'Pineapple',
+    'Plum',
+    'Pomegranate',
+    'Pomelo',
+    'Prickly Pear',
+    'Prunes',
+    'Raspberries',
+    'Strawberries',
+    'Tangerine/Clementine',
+    'Watermelon',
+  ];```
+</details> 
+
 ### Container component
 
 My container will be a class with a few methods I'll use to initialize and update the state of the two child components.
