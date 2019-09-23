@@ -123,7 +123,10 @@ const FruitFilter = props => (
     'Strawberries',
     'Tangerine/Clementine',
     'Watermelon',
-  ];```
+  ];
+  
+  ```
+  
 </details> 
 
 ### Container component
