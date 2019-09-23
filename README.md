@@ -52,9 +52,9 @@ Now that I know the components I need, the `state` I need, and where everything 
 
 ```javascript
 const FruitList = props => (
-        <ul>
-            {props.fruits.map((fruit, index) => <li key={index} >{fruit}</li>)}
-        </ul>
+    <ul>
+      {props.fruits.map((fruit, index) => <li key={index} >{fruit}</li>)}
+    </ul>
 )
 
 const FruitFilter = props => (
