@@ -72,6 +72,7 @@ const FruitFilter = props => (
 
 <details>
   <summary>Fruit List</summary>
+  
   ```jsx
     const fruitList = [
     'Acai', 
@@ -147,11 +148,11 @@ I'll need a method to update the `state` when the filter value changes. This met
 ```javascript
 handleFilterChange(event) {
   event.preventDefault()
-  const filterValue = event.target.value
+  const filterValue = event.currentTarget.value
   this.setState((prevState, props) => {
     // remove fruits that don't contain the filter value
     const filteredFruitList = props.fruits.filter(fruit =>
-      fruit.toLocaleLowerCase().includes(filterValue.toLocaleLowerCase()))
+      fruit.toLowerCase().includes(filterValue.toLowerCase()))
     // return new state with the filtered fruit list and the new value of the filter
     return {
       fruitsToDisplay: filteredFruitList,
