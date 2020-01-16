@@ -60,7 +60,7 @@ const FruitList = props => (
 const FruitFilter = props => (
   <form>
     <label htmlFor="fruit-filter">Filter these Fruits: </label>
-    <input type="text" value={props.value} onChange={props.onChange} name="fruit-filter" />
+    <input type="text" onChange={props.onChange} name="fruit-filter" />
   </form>
  
 )
